@@ -488,11 +488,12 @@ hr.white_line {
 
     #catering-content {
         /* height: 80%; */
-        width: 35%;
+        width: 40%;
     }
 
     .catering_pic {
-        height: 48rem;
+        height: 45rem;
+        margin-top: 10em;
     }
 }
 
