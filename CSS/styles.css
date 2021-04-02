@@ -388,10 +388,15 @@ hr.white_line {
     font-family: 'Dancing Script', cursive;
 }
 
+#catering-content {
+    height: 80%;
+}
+
 .catering_pic {
     margin: auto;
-    height: 25rem;
-    margin-top: 2rem;
+    /* height: 70%; */
+    width: 90%;
+    margin-top: 1.8rem;
 }
 
 /*ABOUT*/
@@ -424,6 +429,20 @@ hr.white_line {
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 900px) {
+    .title_upper {
+        font-size: 4rem;
+        padding: 0;
+        height: 100%;
+        width: fit-content;
+    }
+
+    .title_lower {
+        width: 15em;
+        height: 80%;
+        top: -20px;
+        left: 450px;
+    }
+    
     .sidebar {
         width: 400px;
     }
@@ -465,6 +484,15 @@ hr.white_line {
 
     .food_pic {
         width: 20rem;
+    }
+
+    #catering-content {
+        /* height: 80%; */
+        width: 35%;
+    }
+
+    .catering_pic {
+        height: 48rem;
     }
 }
 
