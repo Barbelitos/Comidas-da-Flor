@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background-color: rgb(243, 203, 210);
+    scroll-behavior: smooth;
+}
+
+.main_wrap {
+    margin:0;
+    padding:0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/*HEADER*/
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    margin: 0 .2em;
+    /* width:30%; */
+    height: 100%;
+}
+
+.header_title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+} 
+
+.title_upper {
+    font-family: 'Dancing Script', cursive;
+    padding-top: .3em;
+    height:20%;
+    font-size: 1.5rem;
+    align-self: right;;
+}
+
+.title_lower {
+    position: absolute;
+    right: 2.5em;
+    top: 1em;
+    height: 30%;
+    width: 50%;
+    margin-top: 2em;
+    /* align-self: right; */
+    /* padding: .8em; */
+}
+
+
+/*INTRO*/
+.intro_box {
+    position: absolute;
+    width: 88%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0.3), rgba(255,255,255,0.5));
+    font-size: 4.8vw;
+    top: 7rem;
+    left: 1.5rem;
+    padding: 1em;
+    text-shadow: 1px 2px 3px grey;
+}
+
+
+/*ORDER INFO*/
+.order_info {
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    text-align: center;
+    /* margin-bottom: 1px; */
+    width: 100%;
+    bottom: 1rem;
+    line-height: 2em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.order_info h2 {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+.order_info p {
+    font-size: 1.2em;
+}
+
+.order_info a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact_info {
+    margin-top: .2em;
+}
+
+/*INTRODUCING THE PROJECT*/
+/* .main_content {
+    height: 40em;
+} */
+
+.main_text {
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+
+/*TYPES OF FOODS*/
+.foods {
+    display: flex;
+    flex-direction: column;
+    /* height: 40em; */
+    background-color: white;
+}
+
+h2 {
+    padding-top: .3em;
+    width: 100%;
+    font-size: 3em;
+    height: 1.4em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.food_cat {
+    display: flex;
+    flex-direction: column;
+}
+
+hr.pink_line {
+    border: none;
+    height: .4em;
+    background-color:rgb(243, 203, 210);
+    margin-top: 0;
+    width: 10rem;
+    margin: auto;
+}
+
+hr.white_line {
+    border: none;
+    height: .4em;
+    background-color:rgb(255, 255, 255);
+    margin-top: 0;
+    width: 10rem;
+    margin: auto;
+}
+
+.foods a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20em;
+    position: relative;
+    background-size: cover;
+    background-color: black;
+}
+.foods a:hover p {
+    transform: scale(1.1);
+}
+
+
+.foods a p {
+    width: 12em;
+    margin: 6.5rem auto;
+    font-size: 1.5em;
+    padding: .5em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border: 4px solid white;
+    transition: .3s;
+}
+
+/*PRIVATE EVENTS*/
+.private_events {
+    height: 40em;
+}
+
+
+/*SIDE MENU*/
+.sidebar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.4s;
+    transform: translate(-100%);
+    text-align: center;
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+.sidebar_logo {
+    margin: 2em auto 2em 3em;
+    width: 15em;
+    height: 15em;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    right: 0.8em;
+    top: 0.4em;
+    font-size: 2.5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s;
+}
+
+.sidebar-toggle:hover {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    float: right;
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    padding: .4em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    transform: rotate(-90deg);
+}
+
+.links {
+    display: block;
+}
+
+.links a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.5em;
+    padding: 1em 1.5em;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.links a:hover {
+    background: rgb(243, 203, 210);
+    color: grey;
+}
+
+
+/*BACKGROUND SLIDESHOW*/
+.slideshow {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -100;
+}
+
+.slide_image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+
+/*MODAL*/
+.modal {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(1.1);
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: visibility 0s linear 0.25s, opacity 0.25s, transform 0.25s;
+}
+
+.show-modal {
+    opacity: 1;
+    transform: scale(1.0);
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: fixed;
+    left: 1em;
+    right: 1em;
+    top: 2em;
+    bottom: 3em;
+    background-color: rgb(248, 247, 247);
+    margin: auto;
+    border-radius: .5rem;
+    transition: all 0.4s;
+}
+
+.closeModal {
+    position: absolute;
+    right: .3em;
+    cursor: pointer;
+    font-size: 2em;
+    width: fit-content;
+    transition: all 0.3s;
+}
+
+.closeModal:hover {
+    transform: rotate(90deg);
+}
+
+.menu-info {
+    background: rgb(248, 247, 247);
+    margin-top: .8em;
+    font-size: 1em;
+    height: 93%;
+    overflow-y: scroll;
+}
+
+.food_intro {
+    text-align: center;
+    margin: .2em auto;
+    height: 5em;
+    font-weight: 500;
+    padding: .5em;
+}
+
+.foods_container {
+    display:flex;
+    flex-direction: column;
+    /* height: 100%; */
+}
+
+.food_pic {
+    margin: 1em;
+    padding: 0;
+    text-decoration: none;
+    overflow: hidden;
+    height: 15em;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+.dish_name {
+    position: absolute;
+    top: 3em;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.catering_pic {
+    margin: auto;
+    height: 25rem;
+    margin-top: 2rem;
+}
+
+/*ABOUT*/
+.about_content {
+    margin: 6em auto 2em auto;
+}
+
+.about_text {
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+.about_pic {
+    margin: 1em auto;
+    width: 100%;
+}
+
+
+/*FOOTER*/
+.footer {
+    height: 80px;
+    background-color: rgb(243, 203, 210);
+    text-align: center;
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 900px) {
+    .sidebar {
+        width: 400px;
+    }
+
+    .intro_box {
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    .food_cat {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+    }
+
+    .foods a {
+        /* width: 58rem; */
+        height: 25rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .foods a p {
+        margin: 8rem auto;
+        width: 70%;
+    }
+
+    .foods_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .food_intro {
+        font-size: 1.8rem;
+        padding: 0 1em;
+    }
+
+    .food_pic {
+        width: 20rem;
+    }
+}
+
+
+
+/*TESTES*/
+
