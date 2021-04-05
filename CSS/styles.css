@@ -321,8 +321,8 @@ hr.white_line {
 
 .modal-content {
     position: fixed;
-    left: 1em;
-    right: 1em;
+    left: 2.5em;
+    right: 2.5em;
     top: 2em;
     bottom: 3em;
     background-color: rgb(248, 247, 247);
@@ -372,6 +372,7 @@ hr.white_line {
     text-decoration: none;
     overflow: hidden;
     height: 15em;
+    border-radius: 15px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -488,8 +489,6 @@ hr.white_line {
 }
 
 
-
-
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 900px) {
     .title_upper {
@@ -531,6 +530,12 @@ hr.white_line {
     .foods a p {
         margin: 8rem auto;
         width: 70%;
+    }
+
+    .modal-content {
+        width: 70%;
+        bottom: 13em;
+        top: 12em;
     }
 
     .foods_container {
