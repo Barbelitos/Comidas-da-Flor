@@ -38,9 +38,13 @@ header {
     z-index: 1;
 }
 
+.header_logo {
+    width: 90px;
+}
+
 .logo {
     margin: 0 .2em;
-    /* width:30%; */
+    width:100%;
     height: 100%;
 }
 
@@ -394,10 +398,10 @@ hr.white_line {
 }
 
 .catering_pic {
-    margin: auto;
-    /* height: 70%; */
+    /* height: auto; */
     width: 90%;
-    margin-top: 1.8rem;
+    /* margin-top: 1.8rem; */
+    margin: 1.8rem auto;
 }
 
 
@@ -559,7 +563,8 @@ hr.white_line {
 
     .catering_pic {
         height: 45rem;
-        margin-top: 10em;
+        /* margin-top: 10em; */
+        margin: 2.2em auto;
     }
 
     /* .review_container {
@@ -598,4 +603,3 @@ hr.white_line {
 
 
 /*TESTES*/
-
