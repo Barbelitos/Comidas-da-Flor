@@ -440,8 +440,7 @@ hr.white_line {
 .review_person {
     text-align: center;
     /* width: 20%; */
-    padding: 1em;
-    /* padding: .3em; */
+    padding: 1.3em 1.1em;
 }
 
 .review_pic {
@@ -457,7 +456,9 @@ hr.white_line {
 }
 
 .review_text {
+    padding: 1.3em 0;
     font-size: 1em;
+    /* border: 1px solid red; */
 }
 
 .review_location {
