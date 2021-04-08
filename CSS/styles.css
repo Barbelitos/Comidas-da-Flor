@@ -564,12 +564,37 @@ hr.white_line {
     }
 
     .about_content {
-        width: 80%;
+        width: 70%;
     }
 
-    /* .about_text {
+    .about_text {
+        font-size: 1.5em;
+    }
+
+    .about_pic {
+        height: 21em;
+        width: 18em;
+        border: 8px solid white;
+    }
+
+    .first_doub {
         display: flex;
-    } */
+    }
+
+    .second_doub {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .third_doub {
+        display:flex;
+    }
+
+    .doub_text {
+        /* width: 50%; */
+        padding: 0 1.5em;
+        margin: auto;
+    }
 
     .reviews_title {
         margin-top: 1.2em;
