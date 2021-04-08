@@ -456,7 +456,7 @@ hr.white_line {
 }
 
 .review_text {
-    padding: 1.3em 0;
+    padding: 1.1em 0;
     font-size: 1em;
     /* border: 1px solid red; */
 }
@@ -568,12 +568,16 @@ hr.white_line {
         margin: 2.2em auto;
     }
 
+    .about_content {
+        width: 70%;
+    }
+
     /* .review_container {
         column-gap: 5em;
     } */
 
     .review_card {
-        width: 70%;
+        width: 80%;
         margin: 3em auto;
     }
 
