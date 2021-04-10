@@ -124,3 +124,6 @@ $(document).ready(function(){
         }
     });
 });
+
+
+//LANGUAGE SWITCH

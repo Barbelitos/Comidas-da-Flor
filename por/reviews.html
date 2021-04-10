@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testemunhos</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" type="text/scss" href="CSS/styles.scss">
+    <title>Testemunhos dos Clientes</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
     <script src="https://kit.fontawesome.com/d94587fbf0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html" class="header_logo">
-            <img class="logo" src="Images/logo.jpg" alt="logo">
+            <img class="logo" src="/Images/logo.jpg" alt="logo">
         </a>
         <div class="header_title">
             <h1 class="title_upper">Comidas e Sabores</h1>
-            <img src="Images/daflor.jpg" class="title_lower" alt="da flor">
+            <img src="/Images/daflor.jpg" class="title_lower" alt="da flor">
         </div>
         <button class="sidebar-toggle">
             <i class="fas fa-bars"></i>
@@ -24,7 +23,7 @@
     </header>
 
     <aside class="sidebar">
-        <img src="Images/logocomplete.jpg" loading="lazy" alt="" class="sidebar_logo">
+        <img src="/Images/logocomplete.jpg" loading="lazy" alt="" class="sidebar_logo">
         <button class="close-btn">
             <i class="fas fa-times"></i>
         </button>
@@ -48,34 +47,34 @@
     <div class="review_container">
         <div class="review_card">
             <div class="review_person">
-                <img class="review_pic" src="Images/Cris.jpg" alt="">
+                <img class="review_pic" src="/Images/Cris.jpg" alt="">
                 <h4 class="review_name">Cristiana</h4>
-                <p class="review_location"><img class="location_pic" src="Images/Location.svg" alt=""></img>Vantaa</p>
+                <p class="review_location"><img class="location_pic" src="/Images/Location.svg" alt=""></img>Vantaa</p>
             </div>
             <p class="review_text">"A comida da Flor é uma verdadeira viagem até o Brasil! Além do sabor, gosto muito da boa disposição e do profissionalismo da Flor, sempre preocupada em corresponder ao que foi pedido. Sou fã do bobó de camarão, é o meu preferido!"</p>    
         </div>
         <div class="review_card">
             <p class="review_text">"A comida da Flor é a experiência completa de visitar o Brasil. Comida excelente, histórias da Flor, e a energia positiva que ela tem. Recomendo pra todos!"</p>    
             <div class="review_person">
-                <img class="review_pic" src="Images/Daniel.jpg" alt="">
+                <img class="review_pic" src="/Images/Daniel.jpg" alt="">
                 <h4 class="review_name">Daniel</h4>
-                <p class="review_location"><img class="location_pic" src="Images/Location.svg" alt=""></img>Helsinki</p>
+                <p class="review_location"><img class="location_pic" src="/Images/Location.svg" alt=""></img>Helsinki</p>
             </div>
         </div>
         <div class="review_card">
             <div class="review_person">
-                <img class="review_pic" src="Images/Shirlei.jpg" alt="">
+                <img class="review_pic" src="/Images/Shirlei.jpg" alt="">
                 <h4 class="review_name">Shirlei</h4>
-                <p class="review_location"><img class="location_pic" src="Images/Location.svg" alt=""></img>Helsinki</p>
+                <p class="review_location"><img class="location_pic" src="/Images/Location.svg" alt=""></img>Helsinki</p>
             </div>
             <p class="review_text">"A Flor faz a melhor feijoada da Finlândia! Para nós que estamos longe de casa ela oferece muito mais que o sabor do Brasil, sempre com seu sorisso e alegria que transbordam amor na sua comida. Super indico."</p>    
         </div>
         <div class="review_card">
             <p class="review_text">"Que bom ter uma comidinha brasileira feita com tanto carinho. O mais importante é ter certeza de ser sempre bem atendida pela nossa Flor. Meu netinho agradece"</p>    
             <div class="review_person">
-                <img class="review_pic" src="Images/AliceEsk.jpg" alt="">
+                <img class="review_pic" src="/Images/AliceEsk.jpg" alt="">
                 <h4 class="review_name">Alice</h4>
-                <p class="review_location"><img class="location_pic" src="Images/Location.svg" alt=""></img>Helsinki</p>
+                <p class="review_location"><img class="location_pic" src="/Images/Location.svg" alt=""></img>Helsinki</p>
             </div>
         </div>
     </div>
@@ -84,12 +83,24 @@
         <h2>Mural</h2>
         <hr class="pink_line">
         <div class="mural_container">
-            <img class="mural_pic" src="Images/Carro.jpg" alt="">
-            <img class="mural_pic" src="Images/Mural.jpg" alt="">
-            <img class="mural_pic" src="Images/BoloM.jpg" alt="">
-            <img class="mural_pic" src="Images/AliceClient.jpg" alt="">
+            <figure>
+                <img class="mural_pic" src="/Images/Carro.jpg" alt="">
+                <figcaption>Banquinha de cachorro quente brasileiro na praia de Hietaranta, verão 2020.</figcaption>
+            </figure>
+            <figure>
+                <img class="mural_pic" src="/Images/Mural.jpg" alt="">
+                <figcaption>Entregando uma encomenda especial na casa do meu cliente Daniel e sua família.</figcaption>
+            </figure>
+            <figure>
+                <img class="mural_pic" src="/Images/BoloM.jpg" alt="">
+                <figcaption>Bolo de mêsversário do Philip.</figcaption>
+            </figure>
+            <figure>
+                <img class="mural_pic" src="/Images/AliceClient.jpg" alt="">
+                <figcaption>Querida cliente Alice e seu netinho Philip.</figcaption>
+            </figure>   
         </div>
-        
+        <br><br> 
     </div>
     
 
@@ -101,6 +112,6 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="JS/script.js"></script>
+    <script type="text/javascript" src="/JS/script.js"></script>
 </body>
 </html>

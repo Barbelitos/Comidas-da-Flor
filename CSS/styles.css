@@ -86,6 +86,33 @@ header {
     text-shadow: 1px 2px 3px grey;
 }
 
+.lang_selector {
+    position: absolute;
+    top: 5em;
+    right: .2em;
+    width: 10rem;
+    display: flex;
+    /* text-align: center; */
+}
+
+.lang_selector a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    display: flex;
+    text-shadow: 2px 2px 4px #000000;
+    justify-content: center;
+}
+
+.language {
+    padding: .3em;
+}
+
+.active {
+    /* text-decoration: underline; */
+    font-weight: 1000;
+    text-transform: uppercase;
+}
 
 /*ORDER INFO*/
 .order_info {
@@ -137,7 +164,6 @@ h2 {
     padding-top: .3em;
     width: 100%;
     font-size: 3em;
-    /* height: 1.4em; */
     text-align: center;
     font-family: 'Dancing Script', cursive;
 }
@@ -385,7 +411,7 @@ hr.white_line {
 }
 
 #catering-content {
-    height: 70%;
+    height: 75%;
 }
 
 .catering_picture {
@@ -394,7 +420,7 @@ hr.white_line {
 }
 
 .catering_pic {
-    width: 90%;
+    width: 80%;
     margin: 2em auto 0 auto;
     padding-top: 3em;
 }
@@ -471,7 +497,7 @@ hr.white_line {
 }
 
 .mural_pic {
-    margin: 2em auto;
+    margin: 2em auto 0 auto;
     width: 80%;
 }
 
@@ -488,6 +514,11 @@ hr.white_line {
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 900px) {
+    .header_title {
+        margin: auto;
+        width: 50em;
+    }
+
     .title_upper {
         font-size: 4rem;
         padding: 0;
@@ -504,6 +535,19 @@ hr.white_line {
 
     .sidebar {
         width: 400px;
+    }
+
+    .lang_selector {
+        right: 7em;
+    }
+
+    .language  {
+        font-size: 1.6em;
+    }
+
+    .lang_selector a img {
+        width: 42px;
+        height: 42px;
     }
 
     .intro_box {
@@ -567,8 +611,7 @@ hr.white_line {
 
     .catering_pic {
         width: 90%;
-        /* padding: 1em; */
-        height: 33em;
+        height: 60em;
     }
 
     .about_content {
@@ -599,7 +642,6 @@ hr.white_line {
     }
 
     .doub_text {
-        /* width: 50%; */
         padding: 0 1.5em;
         margin: auto;
     }
@@ -638,6 +680,8 @@ hr.white_line {
     .mural_container {
         display: flex;
         flex-wrap: wrap;
+        gap: 2.5em;
+        justify-content: center;
     }
 
     .mural_pic {
