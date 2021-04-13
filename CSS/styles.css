@@ -764,3 +764,14 @@ hr.white_line {
         width: auto;
     }
 }
+
+
+
+/*TESTES*/
+
+.contact_ico {
+    padding-top: .2em;
+    width: 1.2em;
+    height: 1.2em;
+    color: white;
+}
