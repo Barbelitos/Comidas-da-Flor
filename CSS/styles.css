@@ -686,7 +686,7 @@ hr.white_line {
 
     .catering_pic {
         width: 90%;
-        height: 60em;
+        height: 65em;
     }
 
     .about_content {
@@ -755,8 +755,8 @@ hr.white_line {
     .mural_container {
         display: flex;
         flex-wrap: wrap;
-        gap: 2.5em;
-        justify-content: center;
+        /* gap: 2.5em; */
+        justify-content: space-around;
     }
 
     .mural_pic {
