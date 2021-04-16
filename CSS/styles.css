@@ -343,9 +343,9 @@ hr.white_line {
 
 .modal-content {
     position: fixed;
-    left: 2.5em;
-    right: 2.5em;
-    top: 2em;
+    left: 2em;
+    right: 1.8em;
+    top: 1.8em;
     bottom: 3em;
     background-color: rgb(248, 247, 247);
     margin: auto;
@@ -411,20 +411,21 @@ hr.white_line {
 }
 
 #catering-content {
-    position: absolute;
-    margin: 4.5em auto;
+    position: fixed;
+    padding: 0;
+    margin: 2.5em auto;
     text-align: center;
 }
 
 .catering-info {
-    height: 90%;
+    height: 95%;
     overflow: hidden;
 }
 
 .catering_picture {
     margin: 2.5em auto 1em auto;
     width: 90%;
-    height: 90%;
+    height: 79%;
 }
 
 /*ABOUT*/
@@ -550,7 +551,7 @@ hr.white_line {
 }
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .intro_box {
         left: 1em;
         right: .5em;
@@ -563,17 +564,6 @@ hr.white_line {
         right: 1.5em;
     }
 
-    .foods_container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .food_pic {
-        width: 20rem;
-    }
-
     .catering_pic {
         height: 45em;
         margin-top: 0;
@@ -581,14 +571,35 @@ hr.white_line {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .modal-content {
+        left: 3em;
+        right: 3em;
+    }
+
+    .foods_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .food_pic {
+        width: 20em;
+    }
+    
     #catering-content {
-        margin: 1em auto;
+        margin: 5em auto;
+        width: 80%;
+    }
+
+    .catering_picture {
+        height: 40em;
+        margin-top: 5em;
     }
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     .header_title {
         margin: auto;
         width: 50em;
@@ -680,8 +691,9 @@ hr.white_line {
     }
 
     #catering-content {
-        width: 50%;
+        width: 40%;
         height: 90%;
+        margin: 1.5em auto;
     }
 
     .catering_pic {
