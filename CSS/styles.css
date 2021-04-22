@@ -491,6 +491,45 @@ hr.white_line {
     width: 1em;
 }
 
+
+/* CONTACT FORM */
+.form_container {
+    width: 100%;
+    align-items: center;
+}
+
+form {
+    margin: 2em auto;
+    width: 20em;
+}
+
+label {
+    font-size: 1em;
+}
+
+input {
+    height: 2.2em;
+}
+
+.form_group {
+    margin-top: .8em;
+}
+
+.form_field {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.form_button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    height: 2em;
+    margin-top: 1.8em
+}
+
+/* GALLERY */
 .mural {
     background-color: white;
 }
