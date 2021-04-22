@@ -3,7 +3,7 @@
     $location = $_POST['location'];
     $message = $_POST['message'];
 
-    $email_from = 'Website User';
+    $email_from = 'davidbbf@gmail.com';
     
     $email_subject = 'New Form Submission';
     
@@ -16,6 +16,6 @@
     
     mail($to, $email_subject, $email_body, $headers);
 
-    header('Location: /por/reviews.html');
+    header('Location: reviews.html');
 
 ?> 
